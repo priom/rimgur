@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    resources :pic
+    resources :pics
 
-    root 'pic#index'
+    root 'pics#index'
 end
