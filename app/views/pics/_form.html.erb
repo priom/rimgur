@@ -1,0 +1,10 @@
+<%= form_for @pic do |f| %>
+    <div class="form-group">
+      <%= f.label :image do %>
+          <%=	f.hidden_field :image_cache %>
+          <%=	f.file_field :image %>
+    <% end %>
+    </div>
+
+    <%= f.submit %>
+<% end %>

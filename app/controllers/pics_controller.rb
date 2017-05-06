@@ -7,8 +7,9 @@ class PicsController < ApplicationController
   end
 
   def create
-    @pic = Pic.new()
-
+    @pic = Pic.new(params.require(:pic).permit(:image))
+    @pic.save
+    redirect_to @pic
   end
 
   def edit
@@ -16,7 +17,7 @@ class PicsController < ApplicationController
   end
 
   def show
-
+    @pic = Pic.find(params[:id])
   end
 
   def update

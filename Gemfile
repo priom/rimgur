@@ -20,6 +20,8 @@ gem 'carrierwave'
 gem 'cloudinary'
 
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
