@@ -1,5 +1,6 @@
 class PicsController < ApplicationController
   def index
+    @pics = Pic.all
   end
 
   def new
@@ -13,7 +14,6 @@ class PicsController < ApplicationController
   end
 
   def edit
-
   end
 
   def show
@@ -21,12 +21,9 @@ class PicsController < ApplicationController
   end
 
   def update
-
   end
 
   def destroy
-    @pic.destroy
-    redirect_to root_path
   end
   
   

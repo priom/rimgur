@@ -1,1 +1,3 @@
-<h1>HOME</h1>
+<% @pics.each do |pic| %>
+    <%=	image_tag(pic.image.url, width: '100%', crop: "scale")  %>
+<% end %>

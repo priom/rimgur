@@ -1,1 +1,3 @@
-<%=	image_tag(@pic.image.url, crop: "scale")  %>
+<%=	image_tag(@pic.image.url, width: '100%', crop: "scale") %>
+
+<p class="text-center"><%= link_to 'Home', root_path %></p>
