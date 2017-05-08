@@ -4,11 +4,17 @@
     <title>Rails5image</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
